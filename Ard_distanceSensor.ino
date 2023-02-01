@@ -16,11 +16,11 @@ int distance = 0;
 
 void setup() {
 
-//Distance sensor port initialzation 
+  //Distance sensor port initialzation 
   pinMode(trig, OUTPUT);
   pinMode(echo, INPUT);
 
-//LED port initialzation 
+  //LED port initialzation 
   pinMode(LED1, OUTPUT); 
   pinMode(LED2, OUTPUT);
   pinMode(LED3, OUTPUT);
@@ -33,7 +33,7 @@ void setup() {
 }
 
 void loop() {
-//Calibrate sensor 
+  //Calibrate sensor 
   digitalWrite(trig, HIGH);
   delayMicroseconds(1000); 
   digitalWrite(trig, LOW);
